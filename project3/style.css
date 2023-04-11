@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+html,body{
+    margin:0;
+    height: 100%;
+    font-size: 16px;
+    line-height: 1.2em;
+    font-weight:400;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.pimage1{
+    background-image: url(images/Landscape1.jpg);
+    min-height: 100%;
+}
+.ptext, .secondContainer, .thirdContainer{
+    position:absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.sectionText1{
+    padding: 50px 80px;
+    text-align: center;
+    
+}
+.section1{
+    color: rgb(151, 147, 147);
+    background-color:rgb(239, 237, 237) ;
+}
+.section2{
+    color: white;
+    background-color: rgb(39, 38, 38);
+}
+
+.advanture, .ldeepinsky, .parallaxText{
+    background-color: rgb(42, 41, 41);
+    padding: 10px;
+    border-radius: 2px;
+
+}
+.pimage2{
+    background-image: url(images/Landscape2.jpg);
+    min-height: 400px;
+}
+.pimage3{
+    background-image: url(images/Landscape3.jpg);
+    min-height: 400px;
+}
+.pimage1, .pimage2, .pimage3{
+    background-size: cover;
+    position: relative; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

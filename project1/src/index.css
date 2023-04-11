@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+.container{
+    font-family: 'Alkatra', cursive;
+    background-color: #e5e5fd;
+    border: 10px solid black;
+    min-height: 100vh;
+}
+#content{
+    margin: 0 auto;
+    max-width: 900px;
+}
+#top_section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    align-items: flex-end;
+   
+}
+#top_section h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    
+}
+#top_section h3{
+    text-align: end;
+}
+.image_container,img{
+    width: 300px;
+    height: 330px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.bottom_sec{
+    margin: 70px 0;
+
+}
+.bottom_sec h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    margin: 20px 0;
+}
+.bottom_sec p{
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+#biographies{
+    margin:50px 0;
+}
+#biographies h2{
+    margin-bottom: 20px;
+}
+#bioLink{
+    text-align: right;
+}
+#biographies li{
+    margin-bottom: 10px;
+}
+#biographies ul{
+    margin-left: 50px;
+}

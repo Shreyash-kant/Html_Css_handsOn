@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="applyBox">
+        <h1>
+          Job Application
+          <span id="dispInLine">(Web)</span>
+        </h1>
+        <form action="">
+          <div class="formContainer">
+            <div class="formControl">
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                name="firstname"
+                id="fname"
+                placeholder="Enter First Name"
+              />
+            </div>
+
+            <div class="formControl">
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                name="lastname"
+                id="lname"
+                placeholder="Enter Last Name"
+              />
+            </div>
+
+            <div class="formControl">
+              <label for="mail">Email</label>
+              <input
+                type="email"
+                name="mailid"
+                id="mail"
+                placeholder="Enter mailid"
+              />
+            </div>
+            <div class="formControl">
+              <label for="jobRole">Job Role</label>
+              <select name="jobrole" id="jobRole">
+                <option value="">Select a job role</option>
+                <option value="frontenddev">Frontend Developer</option>
+                <option value="backenddev">Backend Developer</option>
+                <option value="fullstackdev">Fullstack Developer</option>
+                <option value="ui-ux">UI/Ux Designer</option>
+              </select>
+            </div>
+            <div class="formControl">
+              <label for="address">Address</label>
+              <textarea
+                name="address"
+                id="address"
+                cols="50"
+                rows="5"
+                placeholder="Enter your address.."
+              ></textarea>
+            </div>
+            <div class="formControl">
+              <label for="city">City</label>
+              <input
+                type="text"
+                name="city"
+                id="city"
+                placeholder="Enter your city"
+              />
+            </div>
+            <div class="formControl">
+              <label for="pincode">Pincode</label>
+              <input
+                type="number"
+                name="pincode"
+                id="pincode"
+                placeholder="Enter your pincode of area"
+              />
+            </div>
+            <div class="formControl">
+              <label for="date">Date</label>
+              <input type="date" name="date" id="date" />
+            </div>
+            <div class="formControl">
+              <label for="uploaded_file">Upload CV</label>
+              <input type="file" name="CV" id="uploaded_file" />
+            </div>
+          </div>
+          <div
+            style="display: flex; justify-content: flex-end; margin: 10px auto"
+          >
+            <button type="submit">Apply Now</button>
+          </div>
+          <!-- video watched: 22:00 learn css grid from wesbos and then come here -->
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
