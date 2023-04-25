@@ -19,7 +19,7 @@ html, body{
 nav{
     box-shadow: 3px 3px 4px rgba(45, 44, 44, 0.689);
     margin-bottom: 32px;
-    position: sticky;
+    position:sticky;
     background-color: white;
     top: 0;
     padding: 0 10px;
@@ -77,14 +77,29 @@ button:hover{
     .hero_content h1{
         font-size: 60px;
     }
+    .feature >img{
+        width: 80px;
+        height: 80px;
+    }
 }
-@media (max-width:610px) {
+@media (max-width:760px) {
     .hero_image{
         size: 70%;
     }
+    .feature > img{
+        width: 80px;
+        height: 80px;
+    }
 }
+@media (max-width:500px){
+    .features{
+        flex-direction: column;
+    }
+   
+}
+
 .features{
-    margin: 50px 0;
+    margin: 50px 30px;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -153,4 +168,39 @@ button:hover{
 .item7{
     grid-area: I7;
 }
-/* 44:05 */
+.footer-container{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding: 50px;
+    
+}
+footer{
+    background-color: #fff0db;
+}
+.social-media{
+    display: flex;
+    gap:20px;
+}
+.icon{
+    font-size: 30px;
+    
+}
+.icon:hover{
+    transform: scale(1.2);
+    transition: 0.3s ease-in-out;
+}
+.footer-container h3{
+    margin-bottom: 10px;
+    color: gray;
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+}
+.news-letter input{
+    padding: 4px 50px;
+    border-radius: 2px;
+    border-style: groove;
+    margin-bottom: 10px;
+}
