@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #b39cd0;
+        color: white;
+      }
+      .flex-container {
+        display: flex;
+        width: 100%;
+        height: 200px;
+        position: relative;
+        margin-top: 20%;
+        transform: translateY(-50%);
+        border: 2px solid white;
+      }
+      .flex-child {
+        border: 2px solid;
+        flex-grow: 1;
+        text-align: center;
+        transition: 0.4s;
+        max-width: 100%;
+        font-size: 1.2em;
+      }
+      .flex-child:hover {
+        flex-grow: 4;
+        font-size: 2em;
+      }
+      .flex-container .flex-child:nth-child(1) {
+        background-color: #845ec2;
+      }
+      .flex-container .flex-child:nth-child(2) {
+        background-color: #d65db1;
+      }
+      .flex-container .flex-child:nth-child(3) {
+        background-color: #ff6f91;
+      }
+      .flex-container .flex-child:nth-child(4) {
+        background-color: #ff9671;
+      }
+      .flex-container .flex-child:nth-child(5) {
+        background-color: #ffc75f;
+      }
+      .flex-container .flex-child:nth-child(6) {
+        background-color: #f9f871;
+      }
+      .flex-container .flex-child:nth-child(7) {
+        background-color: #0089ba;
+      }
+      .flex-container .flex-child:nth-child(8) {
+        background-color: #008f7a;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-child">One</div>
+      <div class="flex-child">Two</div>
+      <div class="flex-child">Three</div>
+      <div class="flex-child">Four</div>
+      <div class="flex-child">Five</div>
+      <div class="flex-child">Six</div>
+      <div class="flex-child">Seven</div>
+      <div class="flex-child">Eight</div>
+    </div>
+  </body>
+</html>
