@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .flex-container {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        line-height: 100vh;
+      }
+      .flex-container .flex-item {
+        width: 20vw;
+        height: 100vh;
+        transition: 1s;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+      }
+      .flex-item:hover h1 {
+        background-color: rgba(255, 255, 255, 0.02);
+      }
+
+      h1 {
+        font-size: 2em;
+        color: white;
+        background: rgba(0, 0, 0, 0.7);
+      }
+      h1 span {
+        /* border-radius: 5%; */
+        padding: 25px 20px;
+        text-transform: uppercase;
+        transition: 1s;
+      }
+      .flex-item:hover h1 span {
+        background-color: rgba(255, 255, 255, 0.4);
+        letter-spacing: 3px;
+        color: rgb(27, 27, 27);
+        box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.33);
+      }
+      .flex-container .flex-item:nth-child(1) {
+        background: url(img1.jpg);
+      }
+      .flex-container .flex-item:nth-child(2) {
+        background: url(img2.jpg);
+      }
+      .flex-container .flex-item:nth-child(3) {
+        background: url(img3.jpg);
+      }
+      .flex-container .flex-item:nth-child(4) {
+        background: url(img4.jpg);
+      }
+      .flex-container .flex-item:nth-child(5) {
+        background: url(img5.jpg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item">
+        <h1><span>One</span></h1>
+      </div>
+      <div class="flex-item">
+        <h1><span>two</span></h1>
+      </div>
+      <div class="flex-item">
+        <h1><span>Three</span></h1>
+      </div>
+      <div class="flex-item">
+        <h1><span>Four</span></h1>
+      </div>
+      <div class="flex-item">
+        <h1><span>Five</span></h1>
+      </div>
+    </div>
+  </body>
+</html>
