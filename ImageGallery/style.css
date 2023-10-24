@@ -37,8 +37,20 @@
     align-items: center;
     font-size: larger;
     background-color: rgba(0, 0, 0, 0.558);
-    background-blend-mode: darken;
-    transition: background-blend-mode 0.5s ease, background-position 0.5s ease;
+    background-blend-mode: hard-light;
+    transition: 
+    background-blend-mode 0.8s ease-in-out, 
+    background-position 0.8s ease-in-out, 
+    background-position 0.8s ease-in-out, 
+    background-color 0.8s ease-in-out, 
+    box-shadow 0.8s ease-in-out;
+    border-radius: 10px;
+}
+.grid-box:hover{
+    background-color: rgba(255, 255, 255, 0.056);
+    box-shadow: 1px 1px 10px black;
+    background-blend-mode: hard-light;
+    background-position: center;
 }
 .grid-box1{
     grid-area: Waterfall;
